@@ -1,5 +1,6 @@
-#Define and Access the Database
+# Define and Access the Database
 
+# Python has a build-in support for SQLite
 import sqlite3
 
 import click

@@ -1,4 +1,4 @@
-#Initializing the project:
+# Initializing the project:
 # - Containing the application factory
 # - Telling Python that the /flaskr directory should be treated as a package
 

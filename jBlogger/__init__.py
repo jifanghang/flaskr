@@ -1,6 +1,6 @@
 # Initializing the project:
 # - Containing the application factory
-# - Telling Python that the /flaskr directory should be treated as a package
+# - Telling Python that the /jBlogger directory should be treated as a package
 
 import os
 from flask import Flask
@@ -10,7 +10,7 @@ def create_app(test_config = None):
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_mapping(
         SECRET_KEY='dev',
-        DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
+        DATABASE=os.path.join(app.instance_path, 'jBlogger.sqlite'),
     )
 
     if test_config is None:

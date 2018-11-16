@@ -7,8 +7,8 @@ from flask import render_template
 from flask import request
 from flask import url_for
 
-from flaskr.auth import login_required
-from flaskr.db import get_db
+from jBlogger.auth import login_required
+from jBlogger.db import get_db
 
 bp = Blueprint('blog', __name__)
 

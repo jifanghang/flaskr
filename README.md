@@ -3,7 +3,7 @@
 A simple [Flask](http://flask.pocoo.org/) project with Python 2.7. 
 Database is [SQLite](https://sqlite.org/about.html). Python has a built-in support for that in the SQLite3 module.
 
-### Project layout:
+## Project layout:
 ```
 ├── flaskr/
 │   ├── __init__.py
@@ -33,14 +33,20 @@ Database is [SQLite](https://sqlite.org/about.html). Python has a built-in suppo
 └── MANIFEST.in
 ```
 
-### How to run
-First, initialize the database by
+## How to run
+### Initialization
+First, install dependencies
+```
+pip install -r requirements.txt
+```
+then, initialize the database by
 ```
 flask init-db
 ```
 > *Please only run the above command on the first time.*
 
-Then
+### Run
+Start the service by
 ```
 export FLASK_APP=flaskr
 export FLASK_ENV=development

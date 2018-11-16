@@ -1,11 +1,11 @@
-# flaskr
+# jBlogger
 
 A simple [Flask](http://flask.pocoo.org/) project with Python 2.7. 
 Database is [SQLite](https://sqlite.org/about.html). Python has a built-in support for that in the SQLite3 module.
 
 ## Project layout:
 ```
-├── flaskr/
+├── jBlogger/
 │   ├── __init__.py
 │   ├── db.py
 │   ├── schema.sql
@@ -48,7 +48,7 @@ flask init-db
 ### Run
 Start the service by
 ```
-export FLASK_APP=flaskr
+export FLASK_APP=jBlogger
 export FLASK_ENV=development
 flask run
 ```

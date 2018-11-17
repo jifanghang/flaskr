@@ -1,6 +1,7 @@
 # jBlogger
 
-A simple [Flask](http://flask.pocoo.org/) project with Python 2.7. 
+A simple blogging web app project using [Flask](http://flask.pocoo.org/) with Python 2.7. 
+
 Database is [SQLite](https://sqlite.org/about.html). Python has a built-in support for that in the SQLite3 module.
 
 ## Project layout:

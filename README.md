@@ -41,18 +41,18 @@ Database is [SQLite](https://sqlite.org/about.html). Python has a built-in suppo
 ## How to run
 ### Initialization
 First, install dependencies
-```
+```bash
 pip install -r requirements.txt
 ```
 then, initialize the database by
-```
+```bash
 flask init-db
 ```
 > *Please only run the above command on the first time.*
 
 ### Run
 Start the service by
-```
+```bash
 export FLASK_APP=jBlogger
 export FLASK_ENV=development
 flask run

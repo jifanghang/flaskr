@@ -30,6 +30,10 @@ Database is [SQLite](https://sqlite.org/about.html). Python has a built-in suppo
 │   ├── test_db.py
 │   ├── test_auth.py
 │   └── test_blog.py
+├── .gitignore
+├── README.md
+├── requirements.txt
+├── run.sh
 ├── setup.py
 └── MANIFEST.in
 ```

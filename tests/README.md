@@ -9,4 +9,5 @@ pip install pytest coverage
 * `conftest.py`: contains setup functions (*fixtures*) for each test.
 * `test_factory.py`: test factory itself - pass test config.
 * `test_db.py`: test database.
-* `test_auth.py`: test user authentication
+* `test_auth.py`: test user authentication.
+* `test_blog.py`: test blog functionalities.

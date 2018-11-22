@@ -52,9 +52,6 @@ flask init-db
 
 ### Run
 Start the service by
-```bash
-export FLASK_APP=jBlogger
-export FLASK_ENV=development
-flask run
 ```
-or just `bash run.sh`
+bash run.sh
+```

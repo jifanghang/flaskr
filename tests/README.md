@@ -11,3 +11,18 @@ pip install pytest coverage
 * `test_db.py`: test database.
 * `test_auth.py`: test user authentication.
 * `test_blog.py`: test blog functionalities.
+
+***To make running tests (with coverage) less verbose, a `../setup.cfg` file is added.***
+
+Run the tests
+```bash
+pytest
+pytest -v
+```
+
+To measure the code coverage of test
+```bash
+coverage run -m pytest
+coverage report          # coverage report
+coverage html.           # html report
+```

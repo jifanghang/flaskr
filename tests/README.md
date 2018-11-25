@@ -24,5 +24,5 @@ To measure the code coverage of test
 ```bash
 coverage run -m pytest
 coverage report          # coverage report
-coverage html.           # html report
+coverage html            # html report
 ```

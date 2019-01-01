@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 html {
-  font-family: sans-serif;
-  background: #eee;
+  font-family: 'Roboto', sans-serif;
+  /*font-family: 'Staatliches', cursive;*/
+  /*background: #bfd7ff;*/
+  background: #bfd7ff;
   padding: 1rem;
 }
 
@@ -8,16 +13,19 @@ body {
   max-width: 960px;
   margin: 0 auto;
   background: white;
+  /*background: #bfd7ff;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: serif;
-  color: #377ba8;
+  font-family: 'Staatliches', cursive;
+  color: #bfd7ff;
+  /*color: white;*/
   margin: 1rem 0;
 }
 
 a {
-  color: #377ba8;
+  color: #bfd7ff;
+  /*color: white;*/
 }
 
 hr {
@@ -26,7 +34,8 @@ hr {
 }
 
 nav {
-  background: lightgray;
+  /*background: lightgray;*/
+  background: #757575;
   display: flex;
   align-items: center;
   padding: 0 0.5rem;

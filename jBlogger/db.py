@@ -10,10 +10,12 @@ from flask.cli import with_appcontext
 # 'g' is a special object that is unique for each request. 
 # It is used to store data that might be accessed by multiple functions during the request.
 
+
 def init_db():
     db = get_db()
     with current_app.open_resource('schema.sql') as f:
         db.executescript(f.read().decode('utf8'))
+
 
 @click.command('init-db')
 @with_appcontext
@@ -21,6 +23,7 @@ def init_db_command():
     """Clear the existing data and create new tables."""
     init_db()
     click.echo('Initialized the database.')
+
 
 def get_db():
     if 'db' not in g:
@@ -31,11 +34,13 @@ def get_db():
         g.db.row_factory = sqlite3.Row
     return g.db
 
+
 def close_db(e=None):
     db = g.pop('db', None)
 
     if db is not None:
         db.close()
+
 
 def init_app(app):
     # Tells Flask to call that func when cleaning up after returning the response

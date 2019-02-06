@@ -1,9 +1,11 @@
-# Initializing the project:
-# - Containing the application factory
-# - Telling Python that the /jBlogger directory should be treated as a package
-
+"""
+Initializing the project:
+ - Containing the application factory
+ - Telling Python that the /jBlogger directory should be treated as a package
+"""
 import os
 from flask import Flask
+
 
 def create_app(test_config = None):
     # create and configure the app
@@ -34,6 +36,13 @@ def create_app(test_config = None):
     # database
     from . import db
     db.init_app(app)
+
+    # MySQL database
+    from . import db_mysql
+    # mysql username: 'jBlogger'
+    # password: 'password'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://jBlogger:password@127.0.0.1/jBlogger'
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
     # blueprint
     from . import auth

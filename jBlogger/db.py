@@ -5,12 +5,13 @@ import sqlite3
 import click
 from flask import current_app, g
 from flask.cli import with_appcontext
-
 """
 'g' is a special object that is unique for each request. 
 It is used to store data that might be accessed by
 multiple functions during the request.
 """
+
+
 def init_db():
     db = get_db()
     with current_app.open_resource('schema.sql') as f:

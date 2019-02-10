@@ -46,12 +46,12 @@ pip install -r requirements.txt
 ```
 then, initialize the database by
 ```bash
+export FLASK_APP=jBlogger
 flask init-db
 ```
 > *Please only run the above command on the first time.*
 
 ### Run
-Start the service by
-```
+```bash
 bash run.sh
 ```
